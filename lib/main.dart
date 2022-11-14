@@ -1,3 +1,5 @@
+import 'package:details_app2/duck_page.dart';
+import 'package:details_app2/print_my_name_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,39 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text("Welcome"),
-          ),
-          body: Center(
-            child: Container(
-              // color: Colors.red,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    color: Colors.green,
-                    child: Image.asset(
-                      "assets/animals/duck.png",
-                      height: 500,
-                      width: 300,
-                      fit: BoxFit.fitHeight,
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Text("Hello"),
-                      Text("World"),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Text("WorldWorldWorldWorld"),
-                ],
-              ),
-            ),
-          )),
+      home: PrintMyName(),
     );
   }
 }
